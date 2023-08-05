@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOE BEM - DESTINO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <header class="toposite">
+    <!-- Aqui segue o cabeçalho onde terá a logo e o link de navegação da página -->
+    <div >
+      <img src="./imagens/logo 2.png" alt="Logo da empresa">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Destino.html">Destino</a>
+      <a href="promoções.html">Promoção</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- aqui colocaremos uma tabela para servir para selecionar os destinos-->
+  <main>
+    <table class="tabela">
+      <tr>
+        <td>Trecho</td>
+        <td>Destino</td>
+        <td>Saída</td>
+      </tr>
+      <tr>
+        <td>
+          <form action="">
+            <select name="" id="">
+              <option value="">Ida e Volta</option>
+              <option value="">Somente volta </option>
+              <option value="">Somente ida</option>
+            </select>
+          </form>
+        </td>
+
+        <td>
+          <form action="">
+            <select name="" id="">
+              <option value="">Rio de Janeiro (RJ)</option>
+              <option value="">São Paulo (SP) </option>
+              <option value="">Salvador (BA)</option>
+              <option value="">Florianópolis (SC)</option>
+              <option value="">Fortaleza (CE)</option>
+              <option value="">Foz do Iguaçu (PR)</option>
+              <option value="">Manaus (AM)</option>
+              <option value="">Gramado (RS)</option>
+              <option value="">Recife (PE)</option>
+              <option value="">Brasília (DF)</option>
+            </select>
+          </form>
+        </td>
+        <td>
+          <form action="">
+            <select name="" id="">
+              <option value="">Ouro Preto (MG)</option>
+              <option value="">Bonito (MS) </option>
+              <option value="">Jericoacoara (CE)</option>
+              <option value="">Paraty (RJ)</option>
+              <option value="">Lençóis (BA)</option>
+              <option value="">São Miguel do Gostoso (RN) </option>
+              <option value="">Chapada dos Veadeiros (GO) </option>
+              <option value="">São Thomé das Letras (MG) </option>
+              <option value="">Algodoal (PA) </option>
+              <option value="">Canela (RS) </option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Clientes:</td>
+        <td>Data de viagem ida</td>
+        <td>Data de viagem volta</td>
+      </tr>
+      <tr>
+        <td>
+          <form action="">
+            <label for="adultos">Adultos:</label>
+            <input type="number" id="adultos" name="quantidade_adultos" min="1" max="10" value="1"><br>
+            <label for="criancas">Crianças:</label>
+            <input type="number" id="criancas" name="quantidade_criancas" min="0" max="10" value="0">
+          </form>
+        </td>
+        <td>
+          <form action="">
+            <input type="month" id="ida" name="ida">
+          </form>
+        </td>
+        <td>
+          <form action="">
+            <input type="month" id="ida" name="ida">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </main>
+  
+  <!--Aqui colocaremos um carrosel de imagens-->
+  <div id="meuCarrossel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="#gramado">
+            <img src="./imagens/Cidades/gramado (2).png" alt="Imagem 1">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#gramado">
+            <img src="./imagens/Cidades/outra.png" alt="Imagem 2">
+            </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#riodejaneiro">
+            <img  src="./imagens/Cidades/rio (2).png" alt="Imagem 3"   >
+          </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#riodejaneiro">
+            <img src="./imagens/Cidades/salvador.png" alt="Imagem 4">
+           </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#riodejaneiro">
+            <img src="./imagens/Cidades/sp.png" alt="Imagem 5">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navegação do Carrossel -->
+    <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <!--aqui será asessão de alguns pacotes-->
+  <div >
+    <div id="gramado">
+      <h1 class="title-desti-h1">Gramado (RS)</h1>
+    </div>
+    <div class="img-pac">
+        <div class="box-img">
+          <img src="./imagens/gramado-1.jpg" alt="Foto do Destino">
+        </div>
+        <div class="box-img">
+          <img src="./imagens/gramado-3.jpg" alt="Foto do Destino">
+        </div class="box-img"> 
+        <div class="box-img"> 
+          <img src="./imagens/Gramado-7.jpg" alt="Foto do Destino">
+        </div>  
+      </div>
+    <div id="desti-grama">
+        <!-- Descrição do Destino -->
+        <h2 class="title-desti">Sobre o Destino</h2>
+        <p>Gramado é uma bela cidade localizada no estado do Rio Grande do Sul, no sul do Brasil. Conhecida como um dos destinos mais charmosos e encantadores do país, Gramado é famosa por sua arquitetura europeia, paisagens deslumbrantes, clima ameno e aconchegante, além de uma cultura rica e diversificada.</p>
+    </div> 
+    <div id="desti-atrac"> 
+        <!-- Principais Atrações -->
+        <h2 class="title-desti" id="title-desti">Principais Atrações</h2>
+        <ul>
+            <li>Mini Mundo:Um parque temático que apresenta réplicas em miniatura de construções famosas do mundo todo. É uma atração que diverte tanto crianças como adultos, com detalhes impressionantes nas miniaturas.</li>
+            <li>Festival de Cinema de Gramado: Se a visita coincidir com o evento, é uma oportunidade única de vivenciar o glamour do cinema brasileiro e latino-americano, com exibição de filmes, premiações e a presença de artistas e cineastas renomados.</li>
+            <li>Vinícolas:Embora Gramado seja mais conhecida pelas atrações de inverno e natalinas, a região também abriga algumas vinícolas que oferecem degustações de vinhos produzidos localmente.</li>
+        </ul>
+    </div> 
+    <div id="desti-clima">   
+        <!-- Clima e Melhor Época para Visitar -->
+        <h2 class="title-desti">Clima e Melhor Época para Visitar</h2>
+          <p>
+            O clima em Gramado é caracterizado como subtropical úmido, com temperaturas amenas e bem definidas ao longo das estações do ano. A cidade tem quatro estações bem definidas, cada uma oferecendo experiências distintas para os visitantes. <br>
+
+            <strong>Verão (dezembro a março):</strong> O verão em Gramado é quente e úmido, com temperaturas médias entre 20°C e 28°C. É uma época de alta temporada, especialmente durante as férias escolares e festas de fim de ano. Nessa época, é possível desfrutar de dias ensolarados e aproveitar atividades ao ar livre, como caminhadas e passeios pelos parques e lagoas. <br>
+
+            <strong>Outono (março a junho):</strong> O outono é uma época de transição, com temperaturas agradáveis que variam entre 15°C e 25°C. É uma das melhores épocas para visitar Gramado, pois a cidade fica menos lotada em comparação ao verão e ao inverno. As folhas das árvores mudam de cor, criando paisagens encantadoras, especialmente no final da estação. <br>
+
+            <strong>Inverno (junho a setembro):</strong> O inverno é a estação mais famosa em Gramado, atraindo muitos turistas em busca do clima frio e aconchegante. As temperaturas podem chegar a ficar abaixo de 0°C durante as noites e madrugadas, com médias diurnas entre 10°C e 20°C. É a época ideal para vivenciar o charme das ruas enfeitadas com luzes e decorações de Natal, além de aproveitar festivais, fondue e o clima romântico da cidade. <br>
+
+            <strong>Primavera (setembro a dezembro):</strong> A primavera em Gramado é uma estação de transição, com temperaturas começando a subir gradualmente e variando entre 15°C e 25°C. É uma época agradável para visitar a cidade, pois as flores começam a desabrochar, tornando os jardins e parques ainda mais bonitos. <br>
+
+            Em resumo, Gramado é encantadora durante todo o ano, mas a escolha da melhor época para visitar depende das preferências individuais do viajante. Se você gosta de temperaturas amenas e menos movimento turístico, a primavera e o outono são boas opções. Para quem busca o clima frio, neblina e um clima natalino, o inverno é a escolha ideal. Já o verão é a estação para aproveitar os dias ensolarados e explorar as atrações ao ar livre. Em qualquer época, Gramado sempre oferece uma experiência encantadora para seus visitantes.
+          </p>
+    </div>
+    <div>
+          <!-- Pacotes Turísticos -->
+    <div id="desti-pacote">  
+        <h2 class="title-desti">Pacotes Turísticos para o Destino</h2>
+          <ul>
+            <li>
+                <h3 class="desti-title">Pacote "Romance em Gramado"</h3>
+
+                <p class="desti-title"><Strong >Duração: 5 dias / 4 noites</Strong></p>
+
+                <h4 class="desti-title">Inclui:</h4>
+
+                <ul >
+                  <li> Passagens aéreas de ida e volta para Porto Alegre (aeroporto mais próximo de Gramado).</li>
+                  <li> Traslado do aeroporto de Porto Alegre para um charmoso hotel boutique em Gramado.</li>
+                  <li> Hospedagem em suíte especial com decoração romântica e amenities especiais.</li>
+                  <li> Passeio de pedalinho pelo Lago Negro.</li>
+                  <li> Passeio de "bike" para dois, explorando os belos cenários naturais de Gramado.</li>
+                  <li> Jantar romântico em um restaurante renomado, com um menu exclusivo.</li>
+                  <li> Visita à Aldeia do Papai Noel, com oportunidade de tirar fotos e vivenciar a magia do Natal.</li>
+                  <li> Ingresso para um espetáculo de música ao vivo e dança típica gaúcha.</li>
+                  <li> Massagem relaxante para o casal em um spa local.</li>
+                </ul>  
+            </li>
+          </ul>
+    </div>    
+  </div>    
+
+<!--FIM DO PRIMEIRO PACOTE-->
+<!--aqui será asessão do segundo pacote-->
+ <div>
+      <h1 id="riodejaneiro" class="title-desti-h1">Rio de Janeiro (RJ)</h1>
+      <div class="img-pac">
+          <div class="box-img">
+            <img src="./imagens/Cidades/rio - 1.jpg" alt="Foto do Destino">
+          </div>
+          <div class="box-img">
+            <img src="./imagens/Cidades/rio - 2.jpg" alt="Foto do Destino">
+          </div class="box-img"> 
+          <div class="box-img"> 
+            <img src="./imagens/Cidades/rio - 3.jpg" alt="Foto do Destino">
+          </div>  
+      </div>
+    
+      <div id="desti-grama-rio">
+            <h2 class="title-desti">Sobre o Destino</h2>
+            <p>O Rio de Janeiro é uma das cidades mais icônicas e belas do Brasil, situada na região sudeste do país. Conhecida mundialmente por sua deslumbrante paisagem natural, cultura vibrante, carnaval animado e praias famosas, a cidade é um verdadeiro paraíso para os turistas.
+
+              Com uma mistura única de belezas naturais e atrações urbanas, o Rio de Janeiro oferece uma experiência diversificada para os visitantes. Abençoada por montanhas imponentes, como o Pão de Açúcar e o Corcovado com a estátua do Cristo Redentor, a cidade possui vistas panorâmicas deslumbrantes de tirar o fôlego.</p>
+      </div>
+     <!-- Principais Atrações -->
+      <div id="desti-atrac">
+          <h2 class="title-desti">Pincipais atrações</h2>
+          <ul>
+            <li>Cristo Redentor (Corcovado): Uma das Sete Maravilhas do Mundo Moderno, a estátua do Cristo Redentor é o símbolo icônico do Rio de Janeiro. Localizada no topo do morro do Corcovado, a 710 metros acima do nível do mar, oferece uma vista panorâmica espetacular da cidade e suas belezas naturais.</li>
+            <li>Pão de Açúcar: Outro ponto turístico imperdível do Rio de Janeiro, o Pão de Açúcar é uma montanha com teleféricos que levam os visitantes até o topo, proporcionando vistas deslumbrantes da Baía de Guanabara, das praias e da cidade.</li>
+            <li>Praias: O Rio é famoso por suas praias incríveis. Copacabana e Ipanema são as mais conhecidas, cada uma com seu charme característico. Copacabana é famosa pelo calçadão movimentado, eventos e vida noturna, enquanto Ipanema é frequentada por pessoas descoladas e é conhecida por suas ondas e belas paisagens.</li>
+          </ul>
+      </div>
+    <!-- Clima e Melhor Época para Visitar -->
+      <div  id="desti-clima">
+          <h2 class="title-desti">Clima e Melhor Época para Visitar</h2>
+          <p>O clima no Rio de Janeiro é caracterizado como tropical úmido, com temperaturas agradáveis ao longo do ano e uma estação de chuvas mais pronunciada. A cidade tem um clima privilegiado, com temperaturas moderadas que tornam a visita agradável em todas as estações.br <br>
+
+            <Strong>Melhor Época para Visitar:</Strong><br>
+            A melhor época para visitar o Rio de Janeiro pode variar de acordo com as preferências do viajante. No entanto, considerando o clima e eventos especiais, as seguintes épocas são recomendadas: <br><br>
+            
+            <strong>Outono (março a junho):</strong> Esta é uma das melhores épocas para visitar o Rio. As temperaturas são amenas, com médias entre 20°C e 28°C, tornando o clima agradável para aproveitar as praias e as principais atrações da cidade. Além disso, o período é menos chuvoso, proporcionando dias ensolarados e noites agradáveis. <br>
+            
+            <strong>Primavera (setembro a dezembro):</strong> A primavera também é uma ótima época para visitar o Rio de Janeiro. As temperaturas continuam agradáveis, com médias entre 23°C e 29°C, e a cidade fica ainda mais bonita, com as flores desabrochando e os jardins coloridos. Nessa época, a cidade fica menos movimentada do que durante o verão e o carnaval, tornando a visita mais tranquila.br <br>
+            
+            <strong>Carnaval (data variável em fevereiro ou março):</strong> Se você busca vivenciar a maior festa brasileira, o carnaval no Rio de Janeiro é uma experiência única. Apesar de ser um período de chuvas mais frequentes, a cidade ganha vida com desfiles de escolas de samba, blocos de rua e festas animadas, proporcionando uma atmosfera de celebração contagiosa.</p>
+      </div>   
+    <div id="desti-pacote"> 
+    <!-- Pacotes Turísticos -->
+  
+        <h2 class="title-desti">Pacotes Turísticos para o Destino</h2>
+        <ul>
+          <li>
+            <h3 class="desti-title">Pacote "Descobrindo as Maravilhas do Rio de Janeiro"</h3>  
+
+            <p class="desti-title"><Strong >Duração: 6 dias / 5 noite</Strong></p><br>
+
+            <h4 class="desti-title">Inclui:</h4>
+
+            <ul >
+              <li>Passagens aéreas de ida e volta para o Rio de Janeiro.</li>
+              <li>Traslado do aeroporto para o hotel e do hotel de volta ao aeroporto.</li>
+              <li>Hospedagem em hotel de categoria turística no bairro de Copacabana, com café da manhã incluído.</li>
+              <li>City tour pelos principais pontos turísticos do Rio de Janeiro, incluindo o Cristo Redentor no Corcovado e o Pão de Açúcar, com transporte e ingressos inclusos.</li>
+              <li>Visita ao Jardim Botânico do Rio de Janeiro, com entrada e guia local.</li>
+              <li>Passeio de barco na Baía de Guanabara, proporcionando vistas panorâmicas do Rio e seus arredores.</li>
+              <li>Tour histórico pelo bairro da Lapa, conhecendo a Escadaria Selarón e o Arcos da Lapa, com paradas para fotos.</li>
+              <li>Dia livre para explorar as famosas praias de Copacabana e Ipanema.</li>
+              <li>Ingresso para um espetáculo de samba, com uma noite animada em uma casa de show típica.</li>
+              
+            </ul>
+          </ul>
+        </ul>   
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer>
+
+    <div class="pay">
+      <h1>Formas de pagamento</h1>
+      <img src="imagens/formasdepag.jpg" alt="Formas de pagamento">
+      <p>Explore o mundo com preços irresistíveis! Não perca nossas promoções especiais em passagens aéreas. Fique atento durante a madrugada para descobrir nossas ofertas relâmpago e garanta as melhores experiências de viagem com a Voe Bem.</p>  
+    </div>
+    <div class="privacy">
+      <h2>Aviso de Privacidade</h2>
+      <p>&#9658 A sua privacidade é importante para nós. Nós, da Voe Bem, respeitamos seus direitos relacionados aos seus dados pessoais, e estamos comprometidos em protegê-los. Abaixo, explicamos como coletamos, utilizamos e protegemos suas informações pessoais:</p>
+      <p>&#9658 Coleta de Dados: As informações pessoais que coletamos incluem nome, endereço de e-mail, telefone e outras informações fornecidas por você voluntariamente através do formulário de contato em nosso site.</p>
+      <p>&#9658 Uso das Informações: Utilizamos seus dados pessoais exclusivamente para fins de contato e atendimento ao cliente. Suas informações não serão compartilhadas com terceiros sem o seu consentimento prévio.</p>
+      <p>&#9658 Proteção dos Dados: Adotamos medidas de segurança adequadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</p>
+      <p>&#9658 Armazenamento dos Dados: Seus dados pessoais serão armazenados em nossos servidores seguros enquanto for necessário para os fins mencionados acima, ou pelo tempo exigido por leis e regulamentações aplicáveis.</p>
+      <p>&#9658 Seus Direitos: Você tem o direito de acessar, corrigir ou excluir suas informações pessoais a qualquer momento. Entre em contato conosco caso precise exercer esses direitos.</p>
+      <p>&#9658 Ao utilizar nosso site, você concorda com a coleta e o uso de suas informações pessoais de acordo com esta política de privacidade.</p>
+    </div>
+    
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
